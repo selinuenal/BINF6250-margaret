@@ -82,10 +82,21 @@ Future Directions: If we had more time to work on this code, one of the things I
 
 Overall, I feel that we did a good job helping each other understand the Gibbs sampling approach and working together to design a successful implementation of it. Our workflow was efficient and organized, and we made sure that we were always on the same page regarding the project. Conceptually, we took a bit of time to understand how to implement reverse strands into the GibbsMotifFinder method and understand how it would work with our initial design. With some effort and guidance from the extra posted video on Canvas, we were able to implement this in a logical way. Overall, I think we were successful in this project and learned a lot from doing it.
 
-**Other Members: Selin Uenal**
-Overall, I think this project went well, and I felt more comfortable collaborating on coding with my group. Meeting over Teams periodically throughout this project helped us to walk through the pseudocode and address issues in our program. I struggled most with understanding how the forward and reverse strands fit into the algorithm. Once we worked through that, the process made a lot more sense to me. I also got a better understanding of how Gibbs sampling uses scores to guide random choices. 
+**Other Members: Selin Uenal**  
+
+I think this project went well, and I felt more comfortable collaborating on coding with my group. Meeting over Teams periodically throughout this project helped us to walk through the pseudocode and address issues in our program. I struggled most with understanding how the forward and reverse strands fit into the algorithm. Once we worked through that, the process made a lot more sense to me. I also got a better understanding of how Gibbs sampling uses scores to guide random choices. 
 
 This project also made me realize how important it is to understand the biological context. Getting the code to run is only one part of the problem, we also needed to understand the data and results to see if it makes sense biologically.
 
 # Generative AI Appendix
 We used Claude when we were struggling with figuring out how to incorporate reverse and forward strands. It gave us a quick explanantion for how we should score `kmer` against both strands, and then use `rng.choice()` with the weighted scores.
+
+* Incorporating reverse strand:
+    * AI used: Claude Opus 5.5
+    * Prompt summary: Asked how to incorporate forward and reverse strands into our Gibbs sampler.
+    * Use and justification: Our group used Claude to clarify how to score `k-mer` against both strands, and then use `rng.choice()` with the weighted scores.
+
+* Troubleshooting Ghostscript errors: 
+    * AI used: Claude Opus 5.5
+    * Prompt summary: Asked for help interpreting Ghostscript errors and troubleshooting installation and notebook environment issues.
+    * Use and justification: Our group used Claude to help understand the errors while using homebrew to install Ghostscript, and provide alternatives (e.g. Macports)
